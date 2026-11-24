@@ -30,10 +30,10 @@
   "bugs": {
     "url": "https://github.com/yyShine760/opencode-session-list/issues"
   },
-  "dependencies": {
-    "@opencode/plugin": "latest"
-  },
   "scripts": {
     "dev:install": "bash scripts/dev-install.sh"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "latest"
   }
 }
