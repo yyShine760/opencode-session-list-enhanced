@@ -1,7 +1,8 @@
-# opencode-session-list
+# opencode-session-list-enhanced
 
-An OpenCode plugin that replaces the session picker (`<leader>l`, default `ctrl+x l`) with one whose
-search covers **worktree names and projects**, not only session titles.
+An enhanced replacement for the built-in OpenCode session list (`<leader>l`, default `ctrl+x l`).
+It keeps the same dialog and keys but searches **worktree names and projects**, not only session
+titles.
 
 ## The problem
 
@@ -18,20 +19,20 @@ titles.
 ## Install
 
 ```bash
-opencode plugin add github:yyShine760/opencode-session-list
+opencode plugin add github:yyShine760/opencode-session-list-enhanced
 ```
 
 Or pin it in your global `opencode.json`:
 
 ```jsonc
 {
-  "plugins": ["github:yyShine760/opencode-session-list"]
+  "plugins": ["github:yyShine760/opencode-session-list-enhanced"]
 }
 ```
 
 Restart the TUI once so it loads the plugin's TUI part. After that `<leader>l` opens the new list.
 
-An npm package is not published yet; when it is, `opencode plugin add opencode-session-list` will work the same way.
+An npm package is not published yet; when it is, `opencode plugin add opencode-session-list-enhanced` will work the same way.
 
 ## What it does
 
@@ -63,9 +64,10 @@ Examples:
 ## How the keybind works
 
 `cli.json` only accepts built-in keybind ids — plugin-specific ids are stripped before the config is
-applied. The plugin therefore registers its command with the built-in id `session.list`, so the
+applied. The plugin therefore registers its **command** with the built-in id `session.list`, so the
 existing `<leader>l` binding (including a customised leader) keeps working and the built-in dialog is
-replaced.
+replaced. The plugin/package id itself is `yyshine760.session-list-enhanced`; only the command id is
+shared with the built-in one.
 
 ## Compatibility
 

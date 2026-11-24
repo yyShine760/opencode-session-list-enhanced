@@ -255,7 +255,7 @@ async function openSessions(ctx, allProjects) {
 }
 
 export default Plugin.define({
-  id: "yyshine760.session-list",
+  id: "yyshine760.session-list-enhanced",
   setup(ctx) {
     ctx.keymap.layer(() => ({
       mode: "global",
