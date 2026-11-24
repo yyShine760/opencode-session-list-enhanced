@@ -18,24 +18,20 @@ titles.
 ## Install
 
 ```bash
-opencode plugin add opencode-session-list
+opencode plugin add github:yyShine760/opencode-session-list
 ```
 
 Or pin it in your global `opencode.json`:
 
 ```jsonc
 {
-  "plugins": ["opencode-session-list"]
+  "plugins": ["github:yyShine760/opencode-session-list"]
 }
 ```
 
-From a Git checkout instead of npm:
-
-```bash
-opencode plugin add github:yyShine760/opencode-session-list
-```
-
 Restart the TUI once so it loads the plugin's TUI part. After that `<leader>l` opens the new list.
+
+An npm package is not published yet; when it is, `opencode plugin add opencode-session-list` will work the same way.
 
 ## What it does
 
