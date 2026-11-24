@@ -75,6 +75,9 @@ release may change the surrounding behaviour. If the plugin fails to load, remov
 
 ## Development notes
 
+`@opencode/plugin` is a devDependency only: OpenCode provides the runtime module, so installing the
+plugin does not pull its dependencies (fresh installs are about 50 KB instead of ~190 MB).
+
 Two discovery details cost time while building this:
 
 1. A **local plugin directory must not contain `package.json` `name` + `exports`**. Entry-point
