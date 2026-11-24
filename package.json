@@ -1,0 +1,39 @@
+{
+  "name": "opencode-session-list",
+  "version": "0.1.0",
+  "description": "OpenCode plugin: session picker that searches worktree and project names, not just titles",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.ts"
+  },
+  "files": [
+    "index.ts",
+    "tui.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-tui",
+    "session",
+    "worktree"
+  ],
+  "license": "MIT",
+  "author": "YuYuan <1525187417@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyShine760/opencode-session-list.git"
+  },
+  "homepage": "https://github.com/yyShine760/opencode-session-list#readme",
+  "bugs": {
+    "url": "https://github.com/yyShine760/opencode-session-list/issues"
+  },
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "scripts": {
+    "dev:install": "bash scripts/dev-install.sh"
+  }
+}
